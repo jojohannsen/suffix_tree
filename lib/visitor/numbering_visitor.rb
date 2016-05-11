@@ -1,4 +1,4 @@
-require_relative '../node'
+require_relative '../support/node'
 require_relative 'base_visitor'
 
 # monkey patching dfsNumber and numberNodesInSubtree

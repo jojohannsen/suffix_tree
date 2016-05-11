@@ -1,4 +1,4 @@
-require_relative '../node'
+require_relative '../support/node'
 
 class ValueDepthVisitor < BaseVisitor
   def initialize

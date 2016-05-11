@@ -1,7 +1,3 @@
-require_relative 'location'
-require_relative 'node_factory'
-require_relative 'suffix_linker'
-
 #
 # Builds a suffix tree from one or more DataSource instances
 #
@@ -120,3 +116,9 @@ class SuffixTree
   end
 
 end
+
+Gem.find_files("visitor/*.rb").each { |path| require path }
+Gem.find_files("support/*.rb").each { |path| require path }
+Gem.find_files("search/*.rb").each { |path| require path }
+Gem.find_files("persist/*.rb").each { |path| require path }
+Gem.find_files("data/*.rb").each { |path| require path }

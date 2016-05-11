@@ -1,13 +1,13 @@
-Gem::Specification.new do |s|
-  s.name        = 'suffix_tree'
-  s.version     = '0.0.1'
-  s.date        = '2016-05-09'
-  s.summary     = "Ukkonen suffix tree"
-  s.description = "Suffix tree for any sequence of values"
-  s.authors     = ["Johannes Johannsen"]
-  s.email       = 'johannes.johannsen@gmail.com'
-  s.files       = Dir.glob("{lib,spec}/**/*")
-  s.homepage    =
+Gem::Specification.new do |gem|
+  gem.name        = 'suffix_tree'
+  gem.version     = '0.0.2'
+  gem.date        = '2016-05-09'
+  gem.summary     = "Ukkonen suffix tree"
+  gem.description = "Suffix tree for any sequence of values"
+  gem.authors     = ["Johannes Johannsen"]
+  gem.email       = 'johannes.johannsen@gmail.com'
+  gem.files       = Dir.glob("{lib,spec}/**/*")
+  gem.homepage    =
       'http://rubygems.org/gems/suffix_tree'
-  s.license       = 'MIT'
+  gem.license       = 'MIT'
 end

@@ -10,10 +10,6 @@ used if configuration allows it.
 
     # these require some lower level things
     require 'suffix_tree'
-    require 'data/string_data_source'
-    require 'visitor/tree_print_visitor'
-    require 'visitor/numbering_visitor'
-    require 'visitor/dfs'
 
     # here we create the tree from a string, with '$' terminator
     st = SuffixTree.new('$')
