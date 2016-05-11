@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name        = 'suffix_tree'
-  gem.version     = '0.0.2'
+  gem.version     = '0.0.3'
   gem.date        = '2016-05-09'
   gem.summary     = "Ukkonen suffix tree"
   gem.description = "Suffix tree for any sequence of values"
