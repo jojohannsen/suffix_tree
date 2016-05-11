@@ -117,8 +117,8 @@ class SuffixTree
 
 end
 
-Gem.find_files("visitor/*.rb").each { |path| require path }
-Gem.find_files("support/*.rb").each { |path| require path }
-Gem.find_files("search/*.rb").each { |path| require path }
-Gem.find_files("persist/*.rb").each { |path| require path }
-Gem.find_files("data/*.rb").each { |path| require path }
+Gem.find_files("./visitor/*.rb").each { |path| require path }
+Gem.find_files("./support/*.rb").each { |path| require path }
+Gem.find_files("./search/*.rb").each { |path| require path }
+Gem.find_files("./persist/*.rb").each { |path| require path }
+Gem.find_files("./data/*.rb").each { |path| require path }
