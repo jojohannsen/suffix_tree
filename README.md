@@ -12,6 +12,8 @@ used if configuration allows it.
     require 'suffix_tree'
     require 'data/string_data_source'
     require 'visitor/tree_print_visitor'
+    require 'visitor/numbering_visitor'
+    require 'visitor/dfs'
 
     # here we create the tree from a string, with '$' terminator
     st = SuffixTree.new('$')
@@ -20,7 +22,9 @@ used if configuration allows it.
     st.finish
 
     # here we dump out the suffix tree
-    basicPrinter = BasicDfsTreePrintVisitor.new
+    dfs = DFS.new(NumberingVisitor.new)
+    dfs.traverse(st.root)
+    basicPrinter = BasicDfsTreePrintVisitor.new(stringData, STDOUT)
     dfs = DFS.new(basicPrinter)
     dfs.traverse(st.root)
 
