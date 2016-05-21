@@ -1,10 +1,10 @@
-# suffix_tree_4
+# suffix_tree Gem
 
-This is a Ruby library for creating suffix trees one value at a time.
+The suffix_tree Gem can create a suffix trees from a sequence of values.
 
-Since some algorithms require specific Node properties, such as "leaf count", "previous value at leaf",
-"value depth", the NodeFactory allows dynamic addition of attributes to the Node class, and these values are
-used if configuration allows it.
+The values can be any data type, and are processed linearly (one at a time, no backtracking).
+
+Once the tree is created, different queries on the tree can be done with visitors.
 
 ## Basic Test
 
